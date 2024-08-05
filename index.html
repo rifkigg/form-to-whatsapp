@@ -11,30 +11,34 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="container">
-      <h1 class="text-center">Kirim Pesan Ke Rifki</h1>
-      <form action="#" onsubmit="send()">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nama</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Pesan</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Kirim</button>
-      </form>
+  <body style="height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center bg-secondary" style="height: 100vh;">
+      <div class="container bg-white p-3 rounded">
+        <h1 class="text-center mb-3">Kirim Pesan Ke Rifki</h1>
+        <form action="#" onsubmit="send()">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Nama</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Pesan</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Kirim</button>
+        </form>
+      </div>
     </div>
     <script>
       function send() {
